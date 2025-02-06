@@ -15,66 +15,126 @@
           Step-by-step guidance, portfolio reviews, and portfolio project ideas
           to help you land your next marketing role.
         </p>
-        <button>Build Your portfolio</button>
+        <button aria-label="Start building your portfolio">
+          Build Your Portfolio
+        </button>
       </header>
-      <section>
-        <h2>Header here</h2>
-        <video src=""></video>
-        <button>Watch More Reviews</button>
+
+      <section aria-labelledby="video-section">
+        <h2 id="video-section">Watch Portfolio Reviews</h2>
+        <video
+          src="https://youtu.be/3wSqg1weg8A?si=ulaSshzB6HEjrsoF"
+          controls
+          aria-label="Portfolio review video"
+        ></video>
+        <button aria-label="Watch more portfolio review videos">
+          Watch More Reviews
+        </button>
       </section>
-      <section>
-        <h2>Build Your Own Portfolio</h2>
-        <img src="" alt="" />
+
+      <section aria-labelledby="build-portfolio">
+        <h2 id="build-portfolio">Build Your Own Portfolio</h2>
+        <img
+          src="portfolio-example.jpg"
+          alt="Example of a well-designed portfolio"
+        />
       </section>
-      <section>
-        <h2>Success Stories...</h2>
-        <div>
-          <div>
-            <img src="" alt="" />
-            <p>Endorsement goes here</p>
+
+      <section aria-labelledby="success-stories">
+        <h2 id="success-stories">Success Stories</h2>
+        <div role="list">
+          <div role="listitem">
+            <img src="person1.jpg" alt="Photo of successful user 1" />
+            <p>"This platform helped me land my dream job!"</p>
           </div>
-          <div>
-            <p>Endorsement goes here</p>
-            <img src="" alt="" />
+          <div role="listitem">
+            <p>"I improved my portfolio and gained more confidence!"</p>
+            <img src="person2.jpg" alt="Photo of successful user 2" />
           </div>
-          <div>
-            <img src="" alt="" />
-            <p>Endorsement goes here</p>
+          <div role="listitem">
+            <img src="person3.jpg" alt="Photo of successful user 3" />
+            <p>"Fantastic guidance and feedback!"</p>
           </div>
         </div>
       </section>
 
-      <section>
-        <h2>Create Your Own Projects</h2>
-        <div>
-          <div>
-            <img src="" alt="" />
+      <section aria-labelledby="projects">
+        <h2 id="projects">Create Your Own Projects</h2>
+        <div role="list">
+          <div role="listitem">
+            <img src="project1.jpg" alt="Screenshot of Project 1" />
             <h3>Project 1</h3>
-            <p>Project text goes here...</p>
+            <p>Learn how to structure your portfolio effectively.</p>
           </div>
-          <div>
-            <img src="" alt="" />
+          <div role="listitem">
+            <img src="project2.jpg" alt="Screenshot of Project 2" />
             <h3>Project 2</h3>
-            <p>Project text goes here...</p>
+            <p>Improve your UI/UX skills with hands-on projects.</p>
           </div>
-          <div>
-            <img src="" alt="" />
+          <div role="listitem">
+            <img src="project3.jpg" alt="Screenshot of Project 3" />
             <h3>Project 3</h3>
-            <p>Project text goes here...</p>
+            <p>Get personalised feedback on your work.</p>
           </div>
         </div>
       </section>
-      <section>
-        <h2>Submit Your Portfolio For Review</h2>
-        <form action=""></form>
-        <button>Submit Your Portfolio</button>
+
+      <section aria-labelledby="submit-portfolio">
+        <h2 id="submit-portfolio">Submit Your Portfolio For Review</h2>
+        <form action="#" aria-labelledby="submit-portfolio">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            aria-required="true"
+          />
+
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            aria-required="true"
+          />
+
+          <label for="portfolio-url">Portfolio URL</label>
+          <input
+            type="url"
+            id="portfolio-url"
+            name="portfolio-url"
+            required
+            aria-required="true"
+          />
+
+          <button type="submit">Submit Your Portfolio</button>
+        </form>
       </section>
+
       <footer>
         <div>
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <img
+            src="social1.png"
+            alt="Follow us on Twitter"
+            aria-label="Twitter"
+          />
+          <img
+            src="social2.png"
+            alt="Follow us on LinkedIn"
+            aria-label="LinkedIn"
+          />
+          <img
+            src="social3.png"
+            alt="Follow us on Instagram"
+            aria-label="Instagram"
+          />
+          <img
+            src="social4.png"
+            alt="Follow us on YouTube"
+            aria-label="YouTube"
+          />
         </div>
         <small>Rate My Portfolio | 2025 | James Alderman</small>
       </footer>
