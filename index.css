@@ -92,9 +92,68 @@ textarea:not([rows]) {
 }
 
 /* Variables */
-
 :root {
   --green: #99dbc5;
   --yellow: #f3c53a;
   --dark: #253d59;
+}
+
+.wrapper {
+  border: 1px solid black;
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+header {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  margin: 2em;
+}
+
+header button {
+  margin-top: 1em;
+}
+
+section button {
+  margin-top: 1em;
+}
+
+.video-section {
+  text-align: center;
+}
+
+.video-section video {
+  width: 100%;
+}
+
+.success-stories-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.client-icon {
+  width: 10%;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-item {
+  margin-bottom: 2em;
 }
