@@ -90,3 +90,11 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+
+/* Variables */
+
+:root {
+  --green: #99dbc5;
+  --yellow: #f3c53a;
+  --dark: #253d59;
+}
