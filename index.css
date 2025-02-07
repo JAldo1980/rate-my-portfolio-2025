@@ -28,6 +28,10 @@ dd {
   margin-block-end: 0;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
 ol[role="list"] {
@@ -96,6 +100,7 @@ textarea:not([rows]) {
   --green: #99dbc5;
   --yellow: #f3c53a;
   --dark: #253d59;
+  --text-color: #19363d;
 }
 
 .wrapper {
@@ -106,12 +111,49 @@ textarea:not([rows]) {
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  width: 100%;
+}
+
+.header-button {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header p {
+  width: 500px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #19363d;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 3rem;
+}
+
+span {
+  display: block;
 }
 
 h2 {
   text-align: center;
   margin-bottom: 1em;
+}
+
+p {
+  color: #19363d;
 }
 
 button {
