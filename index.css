@@ -101,6 +101,7 @@ textarea:not([rows]) {
   --yellow: #f3c53a;
   --dark: #253d59;
   --text-color: #19363d;
+  --button-hover: #e0b232;
 }
 
 .wrapper {
@@ -117,6 +118,10 @@ header {
   align-items: center;
   text-align: center;
   width: 100%;
+}
+
+header img {
+  width: 50%;
 }
 
 .header-button {
@@ -158,6 +163,24 @@ p {
 
 button {
   cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8em 1.5em;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: var(--yellow);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+  transform: scale(0.98);
 }
 
 section {
